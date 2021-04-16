@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "comercio1", "comercio1\comercio1.csproj", "{D0416257-97E4-4605-B5A2-836DC43B5605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udi.Comercio.Data", "Udi.Comercio.Data\Udi.Comercio.Data.csproj", "{0CDBC55A-0DD6-4720-8491-004F087E9758}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0416257-97E4-4605-B5A2-836DC43B5605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0416257-97E4-4605-B5A2-836DC43B5605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0416257-97E4-4605-B5A2-836DC43B5605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0416257-97E4-4605-B5A2-836DC43B5605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CDBC55A-0DD6-4720-8491-004F087E9758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CDBC55A-0DD6-4720-8491-004F087E9758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CDBC55A-0DD6-4720-8491-004F087E9758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDBC55A-0DD6-4720-8491-004F087E9758}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

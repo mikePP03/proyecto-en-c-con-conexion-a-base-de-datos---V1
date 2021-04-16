@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Categoria";
+}
+<h2>Categoria</h2>
+<div id="fromCategoria" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-10 col-md-10 col-sm-10 ">
+            <button id="btnAdicionarCategoria" class="btn btn-outline-primary btn-sm rounded float-right" title="Adicionar">
+                <img src="~/Content/open-iconic/svg/plus.svg" alt="Adicionar" />
+            </button>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-10 col-md-10 col-sm-10 ">
+            <table id="tblCategoria" class="table table-hover table-bordered">
+                <colgroup>
+                    <col style="width:40%" />
+                    <col style="width:50%" />
+                    <col style="width:10%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+<div class="modal fade modalPersonalizado" id="agregarAbmCategoria" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtNombreCategoria">Nombre</label>
+                        <input id="txtNombreCategoria" class="form-control" maxlength="50" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtDescripcionCategoria">Descripcion</label>
+                        <input id="txtDescripcionCategoria" class="form-control" maxlength="200" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnAbmGuardarCategoria">Guardar</button>
+                <button class="btn btn-primary" id="btnAbmEditarCategoria">Guardar</button>
+                <a id="btnCancelarAbmCategoria" class="btn btn-link" href="#"
+                   data-dismiss="modal">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modalPersonalizado" id="eliminarCategoria" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="text-mensaje-modal">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnConfirmarEliminarCategoria">Aceptar</button>
+                <a id="btnCancelarEliminarCategoria" class="btn btn-link" href="#"
+                   data-dismiss="modal">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/JS/Categoria.js"></script>

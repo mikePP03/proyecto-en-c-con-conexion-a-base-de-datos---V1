@@ -1,0 +1,129 @@
+﻿@{
+    ViewBag.Title = "Producto";
+}
+<h2>Producto</h2>
+<div id="fromProducto" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-10 col-md-10 col-sm-10 ">
+            <button id="btnAdicionarProducto" class="btn btn-outline-primary btn-sm rounded float-right" title="Adicionar">
+                <img src="~/Content/open-iconic/svg/plus.svg" alt="Adicionar" />
+            </button>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-10 col-md-10 col-sm-10 ">
+            <table id="tblProducto" class="table table-hover table-bordered">
+                <colgroup>
+                    <col style="width:25%" />
+                    <col style="width:25%" />
+                    <col style="width:15%" />
+                    <col style="width:15%" />
+                    <col style="width:15%" />
+                    <col style="width:5%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Categoria</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+<div class="modal fade modalPersonalizado" id="agregarAbmProducto" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtNombreProducto">Nombre</label>
+                        <input id="txtNombreProducto" class="form-control" maxlength="50" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtDescripcionProducto">Descripcion</label>
+                        <input id="txtDescripcionProducto" class="form-control" maxlength="200" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtPrecioProducto">Precio</label>
+                        <input id="txtPrecioProducto" class="form-control" maxlength="200" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="txtStockProducto">Stock</label>
+                        <input id="txtStockProducto" class="form-control" maxlength="200" />
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                    <div class="col-lg-10 col-md-10  col-md-10">
+                        <label for="cmbCategoria">Categoria</label>
+                        <select id="cmbCategoria" class="form-control" ></select>
+                    </div>
+                    <div class="col-lg-1 col-md-1  col-md-1">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnAbmGuardarProducto">Guardar</button>
+                <button class="btn btn-primary" id="btnAbmEditarProducto">Guardar</button>
+                <a id="btnCancelarAbmProducto" class="btn btn-link" href="#"
+                   data-dismiss="modal">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modalPersonalizado" id="eliminarProducto" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="text-mensaje-modal">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btnConfirmarEliminarProducto">Aceptar</button>
+                <a id="btnCancelarEliminarProducto" class="btn btn-link" href="#"
+                   data-dismiss="modal">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/JS/Producto.js"></script>
